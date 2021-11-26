@@ -1,0 +1,48 @@
+.ingresar{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    
+}
+.ingresar{
+    color: #000000;
+}
+.login{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+.login{
+    color: #000000;
+}
+.ion-toolbar{
+ --background: #f5f5f3;   
+}
+
+ion-content {
+    --background: #f5f5f3;
+
+    #header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        ion-card-title {
+            font-weight: 700;
+            font-size: 26px;
+            color: #000000;
+            margin-bottom: 15%;
+        }
+
+        ion-img {
+            width: 125px;
+            height: 125px;
+            border-radius: 50%;
+            border: 8px solid #ffffff;
+        }
+        
+    }
+   
+    }

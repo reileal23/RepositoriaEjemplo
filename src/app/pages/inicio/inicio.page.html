@@ -1,0 +1,88 @@
+<ion-header >
+  <ion-toolbar color="warning">
+   
+      
+    
+
+    <ion-buttons slot="start">
+    <ion-button (click)="mostrarMenu()" color="primary">
+      <ion-icon slot="icon-only" name="menu-outline"></ion-icon>
+
+    </ion-button>
+  </ion-buttons>
+
+    <ion-buttons slot="end">
+      <ion-avatar>
+          <ion-img src="/assets/aliimentos.jpg"></ion-img>
+      </ion-avatar>
+    </ion-buttons>
+
+
+    <ion-title>inicio</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button color="warning">
+      <ion-icon name ="add"></ion-icon>
+    </ion-fab-button>
+  
+
+  <ion-fab-list side="start">
+    <ion-fab-button onclick="window.open('http://facebook.com','_systen','location=yes')">
+      <ion-icon name="logo-facebook"></ion-icon>
+      </ion-fab-button>
+    <ion-fab-button onclick="window.open('http://google.com','_systen','location=yes')">
+    <ion-icon name="logo-google"></ion-icon>
+
+  </ion-fab-button>
+  </ion-fab-list>
+
+  <ion-fab-list side="top">
+    <ion-fab-button onclick="window.open('http://Youtube.com','_systen','location=yes')">
+      <ion-icon name="logo-Youtube"></ion-icon>
+      </ion-fab-button>
+    <ion-fab-button onclick="window.open('http://whatsapp.com','_systen','location=yes')">
+    <ion-icon name="logo-whatsapp"></ion-icon>
+    
+  </ion-fab-button>
+</ion-fab-list>
+
+    
+</ion-fab>
+
+
+
+<ion-content class="ion-padding"> 
+
+  <ion-list>
+    <ion-item *ngFor="let c of componentes"
+              [routerLink] = "c.redirecTo"
+              detail="true">
+     <ion-icon [name]="c.icon" 
+        slot="start" 
+        color="primary"></ion-icon>
+        {{c.name}}
+     </ion-item>
+  </ion-list>
+
+
+
+</ion-content>
+
+<div class="alimentos2" id="header">
+  <ion-img  src="/assets/alimentos2.jpg"></ion-img>
+</div>
+<ion-card>
+
+
+
+
+
+
+
+
+
